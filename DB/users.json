@@ -1,0 +1,20 @@
+{
+    "_id": "userssssssssssssssssssss0",
+    "username": "regissssssssssss",
+    "email": "sergicsssssssssssssurero@gmail.com",
+    "password": "contrsasenya",
+    "profilePicture": "https://example.com/photos/profile123.jpg",
+    "bio": "Life is beautiful",
+    "createdAt": "2025-01-25T10:30:00Z",
+    "status": "active",
+    "friends": ["user456", "user789"], 
+    "settings": {
+      "privacy": "public",
+      "notifications": {
+        "likes": true,
+        "dislikes": true,
+        "comments": true,
+        "follows": true
+      }
+    }
+  }

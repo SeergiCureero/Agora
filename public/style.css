@@ -1,0 +1,58 @@
+:root{
+    --agoraBlue: #94adef;
+    --agoraDarkerBlue: #94adef;
+    --agoraWhite: white;
+}
+@font-face {
+    font-family: HammersmithOne;
+    src: url(fonts/HammersmithOne-Regular.ttf);
+}
+*{
+    font-family: HammersmithOne;
+    color:  var(--agoraWhite);
+}
+body{
+    background-color: var(--agoraBlue);
+}
+header img {
+    /*Center Agora Logo Image*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12em;
+    width: 40%;
+}
+#login_signup_card{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    font-size: large;
+    .loginsignupSections{
+        padding: 1em;
+        text-align: center;
+        input{
+            border-radius: 1em;
+            border-style: none;
+            color: var(--agoraBlue);
+            text-align: center;
+            font-size: large;
+            height: fit-content;
+        }
+        button{
+            background-color: var(--agoraWhite);
+            border-radius: 1em;
+            border-style: none; 
+            color: var(--agoraBlue);
+            height: 2em;
+            width: 6em;
+            font-size: larger;
+        }
+        button:hover{
+            background-color: var(--agoraBlue);
+            color: var(--agoraWhite );
+            cursor: pointer;
+        }
+    }
+}
+

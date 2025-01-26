@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agora</title>
+    <link rel="icon" type="image/x-icon" href="/img/AgoraLogo.png">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <img src="/img/AgoraBanner.png" alt="AGORA">
+    </header>
+    <main>
+        <div id="login_signup_card">
+            <section id="loginSection" class="loginsignupSections">
+                <h2 id="loginLabelMainPage">Have an account?</h2>
+                <form action="/login" method="post" id="loginForm">
+                    <label for="username">Username</label><br>
+                    <input type="text" name="username" id="username" maxlength="25"><br><br>
+                    <label for="user_password">Password</label><br>
+                    <input type="password" name="user_password" id="user_password" minlength="8"><br><br>
+                    <button type="submit" id="loginButtonMainPage">Log in</button>
+                </form>             
+            </section>
+            <section id="signupSection" class="loginsignupSections">
+                <h2 id="signupLabelMainPage">Join Agora!</h2>
+                <button id="signupButtonMainPage"><a href="/signup">Sign Up</a></button>
+            </section>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
