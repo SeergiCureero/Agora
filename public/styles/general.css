@@ -1,0 +1,13 @@
+:root{
+    --agoraBlue: #94adef;
+    --agoraDarkerBlue: #4f7bf3;
+    --agoraWhite: white;
+}
+@font-face {
+    font-family: HammersmithOne;
+    src: url(../fonts/HammersmithOne-Regular.ttf);
+}
+*{
+    font-family: HammersmithOne;
+    color:  var(--agoraWhite);
+}

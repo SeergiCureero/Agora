@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const connect = mongoose.connect("mongodb://Agora/AgoraData");
+const connect = mongoose.connect("mongodb+srv://AgoraAdmin:Hirm5GSVgxo6FG9f@agora.rdysl.mongodb.net/AgoraData");
 //mongodb+srv://AgoraAdmin:Hirm5GSVgxo6FG9f@agora.rdysl.mongodb.net/AgoraData
 
 
@@ -13,11 +13,19 @@ connect.then(() => {
 
 //Create Schema
 const loginSchema = new mongoose.Schema({
-    name:{
+    userID:{
+        type: String,
+        required: true
+    },
+    username:{
         type: String,
         required: true
     },
     password:{
+        type: String,
+        required: true
+    },
+    email:{
         type: String,
         required: true
     }

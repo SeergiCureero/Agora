@@ -28,12 +28,14 @@ app.post("/signup", async (req, res) =>{
 
     const data = {
         userID: req.body.user_id,
+        username: req.body.username,
         password: req.body.user_password,
+        email: req.body.user_email
         //afegir més params de signup
     }
 
     //check if user already exists
-    const existingUser = await collection.findOne({name:data.userID});
+    const existingUser = await collection.findOne({userID:data.userID});
     if (existingUser) {
         res.send("User already exists. Please choose a different username.")
     }
@@ -45,6 +47,7 @@ app.post("/signup", async (req, res) =>{
         data.password = hashedPassword; //replace original pw with hashed one
         const userdata = await collection.insertMany(data);
         console.log(data);
+        res.render("login");
     }
 });
 
@@ -52,7 +55,7 @@ app.post("/signup", async (req, res) =>{
 //USER LOG IN 
 app.post("/login", async (req, res) => {
     try {
-        const checkUser = await collection.findOne({name:req.body.username});
+        const checkUser = await collection.findOne({userID:req.body.username});
         if (!checkUser) {
             res.send("User not found");
         }

@@ -1,0 +1,38 @@
+body{
+    background-color: var(--agoraBlue);
+    display: inline;
+}
+main{
+    text-align: center;
+}
+#signupForm{
+    font-size: large;
+    width: 30%;
+    input{
+        width: 15em;
+        height: 2em;
+        border-radius: 2em;
+        text-align: center;
+        color: var(--agoraBlue);
+    }
+    button{
+        margin-top: 1em;
+        background-color: var(--agoraWhite);
+        border-radius: 1em;
+        border-style: none; 
+        color: var(--agoraBlue);
+        height: 2em;
+        width: 6em;
+        font-size: larger;
+    }
+    button:hover{
+        background-color: var(--agoraBlue);
+        color: var(--agoraWhite);
+        cursor: pointer;
+    }
+    section{
+        padding: 0.5em;
+    }
+}
+
+
